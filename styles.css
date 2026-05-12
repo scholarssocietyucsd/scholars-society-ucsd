@@ -524,6 +524,7 @@ h3 {
 }
 
 .event-list article {
+  position: relative;
   display: grid;
   grid-template-columns: 96px 1fr;
   gap: 22px;
@@ -563,13 +564,27 @@ h3 {
   opacity: 0.72;
 }
 
+.event-list article.past-event::after {
+  content: "";
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  top: 50%;
+  height: 3px;
+  background: rgba(229, 107, 93, 0.72);
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
 .event-list article.past-event time {
   background: var(--muted);
 }
 
+.event-list article.past-event .event-type,
 .event-list article.past-event h3,
 .event-list article.past-event p {
   text-decoration: line-through;
+  text-decoration-color: var(--coral);
   text-decoration-thickness: 2px;
 }
 
