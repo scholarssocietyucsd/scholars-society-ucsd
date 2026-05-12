@@ -859,6 +859,23 @@ h3 {
     background: var(--soft);
     text-align: left;
     color: var(--blue-dark);
+    opacity: 1;
+    -webkit-text-fill-color: var(--blue-dark);
+    transform: translateZ(0);
+  }
+
+  .nav-menu a:link,
+  .nav-menu a:visited,
+  .nav-menu a:hover,
+  .nav-menu a:focus,
+  .nav-menu a:focus-visible,
+  .nav-menu a:active,
+  .nav-menu a[aria-current="page"] {
+    background: var(--soft);
+    color: var(--blue-dark);
+    opacity: 1;
+    outline: none;
+    -webkit-text-fill-color: var(--blue-dark);
   }
 
   .program-grid,
