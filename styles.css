@@ -547,6 +547,7 @@ h3 {
   gap: 16px;
 }
 
+.past-events-panel[hidden],
 .past-events-panel.is-hidden {
   display: none;
 }

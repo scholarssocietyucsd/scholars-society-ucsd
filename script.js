@@ -23,6 +23,6 @@ if (pastEventsToggle && pastEventsPanel) {
     const isExpanded = pastEventsToggle.getAttribute("aria-expanded") === "true";
     pastEventsToggle.setAttribute("aria-expanded", String(!isExpanded));
     pastEventsToggle.textContent = isExpanded ? "See Past Events" : "Hide Past Events";
-    pastEventsPanel.classList.toggle("is-hidden", isExpanded);
+    pastEventsPanel.hidden = isExpanded;
   });
 }
