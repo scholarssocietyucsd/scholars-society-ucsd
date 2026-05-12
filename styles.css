@@ -425,7 +425,7 @@ h3 {
 }
 
 .program-grid article:nth-child(2) img {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 3;
   object-position: center;
 }
 
