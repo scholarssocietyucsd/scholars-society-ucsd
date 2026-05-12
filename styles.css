@@ -523,6 +523,34 @@ h3 {
   gap: 16px;
 }
 
+.past-events-toggle {
+  justify-self: start;
+  min-height: 46px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--blue-dark);
+  color: white;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.past-events-toggle:hover,
+.past-events-toggle:focus-visible {
+  background: var(--ink);
+  outline: none;
+}
+
+.past-events-panel {
+  display: grid;
+  gap: 16px;
+}
+
+.past-events-panel.is-hidden {
+  display: none;
+}
+
 .event-list article {
   position: relative;
   display: grid;
@@ -566,14 +594,6 @@ h3 {
 
 .event-list article.past-event time {
   background: var(--muted);
-}
-
-.event-list article.past-event .event-type,
-.event-list article.past-event h3,
-.event-list article.past-event p {
-  text-decoration: line-through;
-  text-decoration-color: var(--coral);
-  text-decoration-thickness: 2px;
 }
 
 .event-list article.past-event .event-flyer {
