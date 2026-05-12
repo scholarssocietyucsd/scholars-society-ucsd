@@ -914,8 +914,32 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .involved-grid article {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    color: var(--ink);
+  }
+
   .involved-grid img {
-    min-height: 210px;
+    width: 100%;
+    height: 260px;
+    min-height: 0;
+    flex: 0 0 auto;
+  }
+
+  .involved-grid div {
+    display: block;
+    padding: 24px;
+    color: var(--ink);
+  }
+
+  .involved-grid h3 {
+    color: var(--ink);
+  }
+
+  .involved-grid p {
+    color: var(--muted);
   }
 
   .event-list time {
