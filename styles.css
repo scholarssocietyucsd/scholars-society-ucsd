@@ -407,6 +407,29 @@ h3 {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
+  object-position: 50% 34%;
+}
+
+.board-grid img[alt="Juan Ramirez"] {
+  object-position: 50% 0%;
+}
+
+.board-grid img[alt="Darcie Duong"],
+.board-grid img[alt="Jade Manalo"],
+.board-grid img[alt="Marissa Lee"],
+.board-grid img[alt="Sarai Scofield"] {
+  object-position: 50% 50%;
+}
+
+.board-grid img[alt="Alex Spear"] {
+  object-position: 50% 0%;
+}
+
+.board-grid img[alt="Isaac Ahmadi"],
+.board-grid img[alt="Kristy Ngo"],
+.board-grid img[alt="Sophia Zhu"],
+.board-grid img[alt="Vincent Sofonio"] {
+  object-position: 50% 22%;
 }
 
 .board-grid div {
