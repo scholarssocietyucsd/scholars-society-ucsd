@@ -170,7 +170,7 @@ a {
   position: relative;
   min-height: calc(100vh - 76px);
   display: grid;
-  align-items: start;
+  align-items: end;
   padding: clamp(28px, 5vw, 64px);
   overflow: hidden;
   isolation: isolate;
@@ -200,8 +200,8 @@ a {
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(90deg, rgba(4, 19, 31, 0.84), rgba(4, 19, 31, 0.48) 46%, rgba(4, 19, 31, 0.14)),
-    linear-gradient(180deg, rgba(4, 19, 31, 0.62), rgba(4, 19, 31, 0.1) 54%, rgba(4, 19, 31, 0.5));
+    linear-gradient(90deg, rgba(4, 19, 31, 0.82), rgba(4, 19, 31, 0.42) 48%, rgba(4, 19, 31, 0.16)),
+    linear-gradient(0deg, rgba(4, 19, 31, 0.74), rgba(4, 19, 31, 0.08) 44%);
 }
 
 .hero-photo {
@@ -211,13 +211,12 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 58% center;
 }
 
 .hero-copy {
-  max-width: 560px;
+  max-width: 760px;
   color: white;
-  padding-top: clamp(18px, 4vw, 52px);
+  padding-bottom: clamp(32px, 8vw, 80px);
 }
 
 .eyebrow {
@@ -248,11 +247,6 @@ h1 {
   letter-spacing: 0;
 }
 
-.hero h1 {
-  max-width: 560px;
-  font-size: clamp(3rem, 6vw, 5.1rem);
-}
-
 h2 {
   margin: 0;
   font-size: clamp(2rem, 4vw, 4rem);
@@ -267,7 +261,7 @@ h3 {
 }
 
 .hero-copy p:not(.eyebrow) {
-  max-width: 540px;
+  max-width: 650px;
   margin: 24px 0 0;
   font-size: clamp(1.08rem, 2vw, 1.35rem);
 }
@@ -303,6 +297,33 @@ h3 {
 
 .section {
   padding: clamp(64px, 9vw, 116px) clamp(18px, 5vw, 72px);
+}
+
+.home-feature {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 64px);
+  align-items: center;
+  padding: clamp(64px, 9vw, 108px) clamp(18px, 5vw, 72px);
+  background: white;
+}
+
+.home-feature-copy {
+  max-width: 520px;
+}
+
+.home-feature-copy p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.home-feature-photo {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
 }
 
 .section-heading {
@@ -746,6 +767,7 @@ h3 {
   .intro-grid,
   .split,
   .feature-photo,
+  .home-feature,
   .contact-band {
     grid-template-columns: 1fr;
   }
@@ -776,16 +798,10 @@ h3 {
 
   .hero {
     min-height: 86vh;
-    align-items: end;
   }
 
-  .hero-photo {
-    object-position: 62% center;
-  }
-
-  .hero-copy {
-    padding-top: 0;
-    padding-bottom: clamp(20px, 8vw, 44px);
+  .home-feature-photo {
+    aspect-ratio: 4 / 3;
   }
 
   .program-grid,
