@@ -559,6 +559,24 @@ h3 {
   background: var(--blue-dark);
 }
 
+.event-list article.past-event {
+  opacity: 0.72;
+}
+
+.event-list article.past-event time {
+  background: var(--muted);
+}
+
+.event-list article.past-event h3,
+.event-list article.past-event p {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.event-list article.past-event .event-flyer {
+  filter: grayscale(1);
+}
+
 .event-type {
   margin: 0 0 6px !important;
   color: var(--green) !important;
