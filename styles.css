@@ -364,7 +364,8 @@ h3 {
 }
 
 .program-grid article {
-  padding: 24px;
+  overflow: hidden;
+  padding: 0 24px 24px;
   border-top: 5px solid var(--blue);
 }
 
@@ -374,6 +375,20 @@ h3 {
 
 .program-grid article:nth-child(3n) {
   border-top-color: var(--green);
+}
+
+.program-grid img {
+  display: block;
+  width: calc(100% + 48px);
+  aspect-ratio: 4 / 3;
+  margin: 0 -24px 22px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.program-grid article:nth-child(3) img,
+.program-grid article:nth-child(6) img {
+  object-position: center top;
 }
 
 .program-grid p,
