@@ -393,7 +393,7 @@ h3 {
 }
 
 .board-group + .board-group {
-  margin-top: clamp(42px, 7vw, 76px);
+  margin-top: clamp(68px, 9vw, 112px);
 }
 
 .board-group > h3 {
