@@ -682,17 +682,45 @@ h3 {
   background: #fffaf0;
 }
 
+.gallery-event + .gallery-event {
+  margin-top: clamp(44px, 6vw, 72px);
+}
+
+.gallery-event-heading {
+  margin-bottom: 18px;
+}
+
+.gallery-event-heading h3 {
+  margin-bottom: 6px;
+  font-size: clamp(1.2rem, 2.2vw, 1.65rem);
+}
+
+.gallery-event-heading p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
+  align-items: center;
+  justify-items: center;
 }
 
 .gallery-grid img {
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 3;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
+  background: var(--soft);
   border-radius: 8px;
+}
+
+.gallery-grid img:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  max-width: calc((100% - 12px) / 2);
 }
 
 .alumni-grid {
@@ -910,6 +938,10 @@ h3 {
 }
 
 @media (max-width: 640px) {
+  .gallery-grid img:last-child:nth-child(odd) {
+    max-width: 100%;
+  }
+
   .brand span {
     max-width: 180px;
     line-height: 1.15;
