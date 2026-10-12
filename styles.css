@@ -490,6 +490,10 @@ h3 {
   object-position: 50% 0%;
 }
 
+.board-grid img[alt="Carter Imrie"] {
+  object-position: 50% 25%;
+}
+
 .board-grid img[alt="Isaac Ahmadi"],
 .board-grid img[alt="Kristy Ngo"],
 .board-grid img[alt="Sophia Zhu"],
