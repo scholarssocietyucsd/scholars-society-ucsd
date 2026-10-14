@@ -623,7 +623,8 @@ h3 {
   grid-template-columns: 96px minmax(0, 1fr) minmax(170px, 230px);
 }
 
-.event-list time {
+.event-list time,
+.event-list .announcement-badge {
   display: grid;
   place-items: center;
   min-height: 92px;
@@ -632,18 +633,21 @@ h3 {
   color: white;
 }
 
-.event-list time span {
+.event-list time span,
+.event-list .announcement-badge span {
   color: var(--gold);
   font-weight: 900;
   text-transform: uppercase;
 }
 
-.event-list time strong {
+.event-list time strong,
+.event-list .announcement-badge strong {
   font-size: 2.2rem;
   line-height: 1;
 }
 
-.event-list .announcement time {
+.event-list .announcement time,
+.event-list .announcement-badge {
   background: var(--blue-dark);
 }
 
@@ -977,7 +981,8 @@ h3 {
     color: var(--muted);
   }
 
-  .event-list time {
+  .event-list time,
+  .event-list .announcement-badge {
     width: 96px;
   }
 
