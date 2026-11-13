@@ -494,6 +494,16 @@ h3 {
   object-position: 50% 25%;
 }
 
+.board-grid .whitney-portrait {
+  margin: 0;
+  overflow: hidden;
+}
+
+.board-grid .whitney-portrait img {
+  transform: scale(1.13);
+  transform-origin: 25% 100%;
+}
+
 .board-grid img[alt="Isaac Ahmadi"],
 .board-grid img[alt="Kristy Ngo"],
 .board-grid img[alt="Sophia Zhu"],
